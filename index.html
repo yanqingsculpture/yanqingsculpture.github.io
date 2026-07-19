@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>彦青雕塑 YANQING SCULPTURE · 赵彦青 · 城市雕塑 · 石雕 · 砚台</title>
+<meta name="description" content="彦青雕塑（Yanqing Sculpture Art）——赵彦青，雕塑艺术家，四川省工艺美术大师，穆坪砚非遗传承人。城市雕塑设计制作安装一体化服务。重庆·雅安宝兴。">
+<meta name="keywords" content="彦青雕塑,赵彦青,城市雕塑,石雕,砚台,穆坪砚,雕塑艺术家,工艺美术大师,非遗传承人,重庆雕塑,雅安雕塑">
+<meta property="og:title" content="彦青雕塑 YANQING SCULPTURE · 赵彦青">
+<meta property="og:description" content="雕塑艺术家 · 非遗传承人 · 四川省工艺美术大师。城市雕塑设计制作安装一体化服务。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cqyqds.cn">
+<style>
+  :root{
+    --gold:#B79C5A;--gold-soft:#C9B377;--ink:#1A1A1A;
+    --ink-soft:#3A3A3A;--ink-light:#666;--paper:#FFFFFF;
+    --paper-warm:#FAF8F3;--line:#E4DFD3;
+    --sans:"Calibri","Helvetica Neue","Arial","Microsoft YaHei",sans-serif;
+    --serif:"STSong","SimSun","宋体","Noto Serif SC",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity 1s cubic-bezier(0.16,1,0.3,1),transform 1s cubic-bezier(0.16,1,0.3,1);}
+  .reveal.visible{opacity:1;transform:translateY(0);}
+
+  /* 导航 */
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
+  nav .inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:64px;}
+  nav .logo{font-family:var(--sans);font-size:12px;letter-spacing:0.36em;color:var(--gold);text-decoration:none;}
+  nav .links{display:flex;gap:32px;list-style:none;}
+  nav .links a{font-family:var(--serif);font-size:14px;color:var(--ink-soft);text-decoration:none;letter-spacing:0.08em;transition:color 0.3s;}
+  nav .links a:hover{color:var(--gold);}
+  .menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;color:var(--ink);font-size:22px;}
+
+  /* Hero */
+  .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 40px 80px;position:relative;}
+  .hero .brand-mark{font-family:var(--sans);font-size:14px;letter-spacing:0.52em;color:var(--gold);margin-bottom:48px;font-weight:300;}
+  .hero h1{font-family:var(--serif);font-size:56px;font-weight:400;letter-spacing:0.12em;color:var(--ink);margin-bottom:16px;}
+  .hero .tagline-zh{font-family:var(--serif);font-size:18px;color:var(--ink-soft);letter-spacing:0.1em;margin-bottom:8px;}
+  .hero .tagline-en{font-family:var(--sans);font-size:14px;color:var(--ink-light);letter-spacing:0.16em;font-style:italic;}
+  .hero .gold-rule{width:80px;height:1px;background:var(--gold);margin:56px auto 0;}
+
+  /* 导航卡片 */
+  .nav-cards{display:flex;gap:24px;margin-top:64px;flex-wrap:wrap;justify-content:center;}
+  .nav-card{display:block;width:200px;padding:36px 20px;text-align:center;border:1px solid var(--line);text-decoration:none;background:var(--paper);transition:all 0.4s cubic-bezier(0.16,1,0.3,1);}
+  .nav-card:hover{border-color:var(--gold);transform:translateY(-6px);box-shadow:0 12px 40px rgba(0,0,0,0.04);}
+  .nav-card .icon{font-family:var(--serif);font-size:32px;color:var(--gold);margin-bottom:16px;}
+  .nav-card h3{font-family:var(--serif);font-size:17px;font-weight:400;color:var(--ink);margin-bottom:6px;}
+  .nav-card p{font-family:var(--sans);font-size:12px;color:var(--ink-light);letter-spacing:0.08em;text-transform:uppercase;}
+
+  /* 底部信息条 */
+  .identity-bar{background:var(--ink);color:var(--paper);text-align:center;padding:48px 40px;}
+  .identity-bar .zh{font-family:var(--serif);font-size:16px;color:var(--gold-soft);letter-spacing:0.1em;margin-bottom:8px;}
+  .identity-bar .en{font-family:var(--sans);font-size:13px;color:#888;font-style:italic;}
+
+  footer{text-align:center;padding:60px 40px 64px;background:var(--paper-warm);}
+  footer .cert-mark{font-family:var(--sans);font-size:12px;letter-spacing:0.42em;color:var(--gold);margin-bottom:8px;}
+  footer .cert-no{font-family:var(--sans);font-size:10px;letter-spacing:0.32em;color:var(--ink-light);margin-bottom:10px;}
+  footer .copyright{font-family:var(--sans);font-size:11px;letter-spacing:0.2em;color:#bbb;text-transform:uppercase;margin-top:16px;}
+
+  @media(max-width:768px){
+    nav .inner{padding:0 24px;}
+    nav .links{display:none;}
+    nav .links.open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:rgba(255,255,255,0.98);backdrop-filter:blur(12px);padding:20px 24px;gap:12px;border-bottom:1px solid var(--line);}
+    .menu-toggle{display:block;}
+    .hero{padding:100px 24px 60px;}
+    .hero h1{font-size:36px;}
+    .hero .brand-mark{font-size:12px;letter-spacing:0.36em;margin-bottom:36px;}
+    .hero .tagline-zh{font-size:15px;}
+    .nav-cards{gap:16px;margin-top:48px;}
+    .nav-card{width:160px;padding:28px 16px;}
+  }
+  @media(max-width:480px){
+    .hero{padding:90px 20px 50px;}
+    .hero h1{font-size:28px;}
+    .hero .tagline-zh{font-size:14px;}
+    .nav-card{width:140px;padding:24px 12px;}
+    .nav-card .icon{font-size:26px;}
+    .nav-card h3{font-size:15px;}
+    footer{padding:48px 20px 52px;}
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="inner">
+    <a href="index.html" class="logo">YANQING SCULPTURE</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="菜单">&#9776;</button>
+    <ul class="links" id="navLinks">
+      <li><a href="works.html">作品 Works</a></li>
+      <li><a href="about.html">关于 About</a></li>
+      <li><a href="contact.html">联系 Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero" id="top">
+  <div class="brand-mark reveal" style="transition-delay:0.1s">MAISON · YANQING · ATELIER · EST. MMXVI</div>
+  <h1 class="reveal" style="transition-delay:0.3s">赵彦青</h1>
+  <p class="tagline-zh reveal" style="transition-delay:0.5s">雕塑艺术家 · 工艺美术大师 · 非遗传承人</p>
+  <p class="tagline-en reveal" style="transition-delay:0.6s">Sculptor · Master of Craft · Heritage Bearer</p>
+  <div class="gold-rule reveal" style="transition-delay:0.8s"></div>
+
+  <div class="nav-cards reveal" style="transition-delay:1s">
+    <a href="works.html" class="nav-card">
+      <div class="icon">作</div>
+      <h3>作品集</h3>
+      <p>Works</p>
+    </a>
+    <a href="about.html" class="nav-card">
+      <div class="icon">人</div>
+      <h3>关于我</h3>
+      <p>About</p>
+    </a>
+    <a href="contact.html" class="nav-card">
+      <div class="icon">信</div>
+      <h3>联系</h3>
+      <p>Contact</p>
+    </a>
+  </div>
+</section>
+
+<div class="identity-bar">
+  <p class="zh">城市雕塑 · 石雕 · 砚台 · 陶瓷 &nbsp;|&nbsp; 设计 · 制作 · 安装</p>
+  <p class="en">Public Sculpture · Stone · Inkstone · Ceramics &nbsp;|&nbsp; Design · Fabrication · Installation</p>
+</div>
+
+<footer>
+  <div class="cert-mark">MAISON · YANQING · ATELIER · EST. MMXVI</div>
+  <div class="cert-no">N° — MMXVI</div>
+  <div class="copyright">&copy; MMXVI–MMXXVI &nbsp;Yanqing Sculpture Art. All Rights Reserved.</div>
+</footer>
+
+<script>
+(function(){
+  var obs=new IntersectionObserver(function(e){e.forEach(function(en){if(en.isIntersecting)en.target.classList.add('visible');});},{threshold:0.2});
+  document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el);});
+})();
+window.addEventListener('scroll',function(){document.getElementById('nav').style.boxShadow=window.scrollY>10?'0 1px 12px rgba(0,0,0,0.04)':'none';});
+document.getElementById('menuToggle').addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('open');});
+</script>
+
+</body>
+</html>
